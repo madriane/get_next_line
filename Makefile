@@ -6,11 +6,11 @@
 #    By: amarandi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/12/15 13:34:47 by amarandi          #+#    #+#              #
-#    Updated: 2017/12/15 16:06:58 by amarandi         ###   ########.fr        #
+#    Updated: 2017/12/22 16:44:45 by amarandi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CFLAGS=-Wall -Wextra -Werror
+CFLAGS=-g -Wall -Wextra -Werror
 
 all:
 	clang $(CFLAGS) -I libft/includes -o main.o -c main.c

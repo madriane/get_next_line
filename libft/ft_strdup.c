@@ -6,7 +6,7 @@
 /*   By: amarandi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/30 15:29:44 by amarandi          #+#    #+#             */
-/*   Updated: 2017/12/06 19:14:25 by amarandi         ###   ########.fr       */
+/*   Updated: 2017/12/27 12:27:27 by amarandi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,16 @@ char	*ft_strdup(const char *s1)
 	}
 	s2[i] = 0;
 	return (s2);
+}
+
+char	*ft_strmove(char **s1, int n)
+{
+	char	*tmp;
+
+	*s1 += n;
+	tmp = ft_strdup(*s1);
+	*s1 -= n;
+	free(*s1);
+	*s1 = tmp;
+	return (*s1);
 }
